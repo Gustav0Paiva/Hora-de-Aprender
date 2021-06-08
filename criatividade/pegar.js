@@ -29,6 +29,9 @@ var specialElementHandlers = {
 };
 
 $('#btGerarPDF').click(function () {
+    var sei = document.getElementById('titulo').value
+
+
     doc.text($('#titulo').val(), 85, 10);
 
     doc.fromHTML($('#conteudo').html(), 12, 15, {
@@ -44,6 +47,6 @@ $('#btGerarPDF').click(function () {
     });
 
 
-    doc.save('exemplo-pdf.pdf');
+    doc.save(sei + '.pdf');
 });
 

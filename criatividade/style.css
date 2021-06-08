@@ -1,6 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
-
-body{
+body {
   margin: 0;
   padding: 0;
   background-image: url(bg.jpg);
@@ -8,13 +7,14 @@ body{
   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
-a{
+a {
   text-decoration: none;
 }
 
-header{
+header {
   z-index: 1;
-  position: fixed;background:rgba(39, 218, 134, 0.61);
+  position: fixed;
+  background: rgba(39, 218, 134, 0.61);
   background: rgba(39, 218, 134, 0.61);
   padding: 20px;
   width: calc(100% - 0%);
@@ -23,7 +23,7 @@ header{
   backdrop-filter: blur(15px);
 }
 
-.left_area h3{
+.left_area h3 {
   color: black;
   margin: 0;
   text-transform: uppercase;
@@ -31,12 +31,11 @@ header{
   font-weight: 900;
 }
 
-.left_area span{
+.left_area span {
   color: black;
 }
 
-
-.sidebar{
+.sidebar {
   z-index: 1;
   top: 0;
   background: rgba(39, 218, 134, 0.61);
@@ -52,17 +51,18 @@ header{
   backdrop-filter: blur(15px);
 }
 
-.dropdown{
+.dropdown {
   position: absolute;
   right: 0;
   margin: 20px;
   transition: 0.3s ease;
 }
 
-.rotate{
+.rotate {
   transform: rotate(90deg);
 }
-.sidebar a{
+
+.sidebar a {
   color: black;
   display: block;
   width: 100%;
@@ -74,15 +74,15 @@ header{
   transition-property: background;
 }
 
-.sidebar a:hover{
+.sidebar a:hover {
   background: white;
 }
 
-.sidebar i{
+.sidebar i {
   padding-right: 10px;
 }
 
-label #sidebar_btn{
+label #sidebar_btn {
   z-index: 1;
   color: black;
   position: fixed;
@@ -94,71 +94,80 @@ label #sidebar_btn{
   transition-property: color;
 }
 
-#check:checked ~ .sidebar{
+#check:checked~.sidebar {
   left: -185px;
 }
 
-#check:checked ~ .sidebar a span{
+#check:checked~.sidebar a span {
   display: none;
 }
 
-#check:checked ~ .sidebar a{
+#check:checked~.sidebar a {
   font-size: 20px;
   margin-left: 165px;
   width: 100%;
 }
 
-#check{
+#check {
   display: none;
 }
 
-
-@media (max-width: 900px){
-  .main h1{
+@media (max-width: 900px) {
+  .main h1 {
     font-size: 40px;
     line-height: 60px;
   }
 }
 
 .historia {
-    margin-top: 100px;
+  margin-top: 100px;
 }
 
-
-
-input:focus,
-select:focus {
-    box-shadow: 0 0 0 0;
-    border: 0 none;
-    outline: 0;
-    border-bottom: solid 1px;
-   
+input:focus, select:focus {
+  box-shadow: 0 0 0 0;
+  border: 0 none;
+  outline: 0;
+  border-bottom: solid 1px;
 }
 
 input {
-    border: 0 none;
-    outline: 0;
-    border-bottom: solid 1px;
-    margin-top: 20px;
-    margin-bottom: 20px;
-    font-size: 20px;
-    text-align: center;
+  border: 0 none;
+  outline: 0;
+  border-bottom: solid 1px;
+  margin-top: 20px;
+  margin-bottom: 25px;
+  font-size: 20px;
+  text-align: center;
+ 
 }
 
-
-textarea{
-    max-height: 138px;
-    max-width: 568px;
-    min-height: 138px;
-    min-width: 568px;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+textarea {
+  max-height: 138px;
+  max-width: 568px;
+  min-height: 138px;
+  min-width: 568px;
+  font-family: Arial, sans-serif;
+  margin-bottom: 20px;
 }
 
-.baixar{
+p{
+  margin: 0px;
+  position: absolute;
+}
+
+.baixar {
   padding: 20px;
   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-  
+  background-color: rgba(39, 218, 134, 0.61);
   border-radius: 5px;
+  border: solid 1px;
+  box-shadow: 1px 5px black;
+  transition: transform .13s cubic-bezier(.53, -0.4, .91, 2.81);
 }
 
-
+.baixar:hover {
+  background-color: white;
+  cursor: pointer;
+  box-shadow: 5px 5px black;
+  transform: scale(1.10);
+}
