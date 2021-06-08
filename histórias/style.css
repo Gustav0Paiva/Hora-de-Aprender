@@ -114,7 +114,14 @@ label #sidebar_btn{
 
 .card{
   margin: 20px;
+  box-shadow: 5px 5px 1px rgba(0, 0, 0, 0.527);
 }
+
+.card-img-top{
+  border-bottom: solid 1px;
+  border-color: rgba(0, 0, 0, 0.178);
+}
+
 
 /* CSS FLEXBOX 1 */
 
