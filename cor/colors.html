@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script> -->
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js" charset="utf-8"></script>
+    <script src="color.js"></script>
+    <title>COLORS</title>
+</head>
+<script>
+
+
+</script>
+
+<body>
+
+    <input type="checkbox" id="check">
+    <!--header start-->
+    <header>
+      <label for="check">
+        <i class="fas fa-bars" id="sidebar_btn" style="margin-left: 15px;"></i>
+      </label>
+      <div class="left_area">
+        <h3><span>HORA DE APRENDER</span></h3>
+      </div>
+    </header>
+    <!--header end-->
+    <!--sidebar start-->
+    <div class="sidebar">
+      <div class="menu"></div>
+      <a href="../histórias/historias.html"><i class="fas fa-book"></i><span>HISTÓRIAS</span></a>
+      <a href="../criatividade/criar.html"><i class="fas fa-pen"></i><span>HORA DA CRIATIVIDADE</span></a>
+      <a class="sub-btn"><i class="fas fa-desktop"></i><span>INGLÊS</span><span><i class="fas fa-angle-right dropdown"></i></span></a>
+        <div class="sub-menu">
+          <a href="../animal/animal.html" class="sub-item"><span>ANIMALS</span></a>
+          <a href="../fruta/fruit.html" class="sub-item"><span>FRUITS</span></a>
+          <a href="../cor/colors.html" class="sub-item"><span>COLORS</span></a>
+        </div>
+      <a href="#"><i class="fas fa-info-circle"></i><span>DESENVOLVEDORES</span></a>
+    </div>
+    <!--sidebar end-->
+    <script type="text/javascript">
+      $(document).ready(function(){
+        //jquery for toggle sub menus
+        $('.sub-btn').click(function(){
+          $(this).next('.sub-menu').slideToggle();
+          $(this).find('.dropdown').toggleClass('rotate');
+        });
+      });
+      </script>
+
+    <div class="conteudo">
+    <h1>QUAL É A COR?</h1>
+
+    <section class="flex">
+
+        <div>
+            <img src="cores/amarelo.jpg">
+            <audio controls>
+                <source src="audio/yellow.mpeg">
+            </audio>
+            <center>
+                <p>
+                    <button class="button button1" id="hello" onclick="ErradoHello()">HELLO</button>
+                    <button class="button button2" id="smile" onclick="ErradoSmile()">SMILE</button>
+                    <button class="button button3" id="yellow" onclick="AcertoYellow()">YELLOW</button>
+                </p>
+            </center>
+        </div>
+
+        <div>
+            <img src="cores/azul.jpg">
+            <audio controls>
+                <source src="audio/blue.mpeg">
+            </audio>
+            <center>
+                <p>
+                    <button class="button button1" id="sea" onclick="ErradoSea()">SEA</button>
+                    <button class="button button2" id="blue" onclick="AcertoBlue()">BLUE</button>
+                    <button class="button button3" id="sky" onclick="ErradoSky()">SKY</button>
+                </p>
+            </center>
+        </div>
+        <div>
+            <img src="cores/laranja.jpg">
+            <audio controls>
+                <source src="audio/orange.mpeg">
+            </audio>
+            <center>
+                <p>
+                    <button class="button button1" id="fruit" onclick="ErradoFruit()">FRUIT</button>
+                    <button class="button button2" id="cute" onclick="ErradoCute()">CUTE</button>
+                    <button class="button button3" id="orange" onclick="AcertoOrange()">ORANGE</button>
+                </p>
+            </center>
+        </div>
+
+        <div>
+            <img src="cores/cinza.jpg">
+            <audio controls>
+                <source src="audio/gray.mpeg">
+            </audio>
+            <center>
+                <p>
+                    <button class="button button1" id="gray" onclick="AcertoGray()">GRAY</button>
+                    <button class="button button2" id="cement" onclick="ErradoCement()">CEMENT</button>
+                    <button class="button button3" id="cat" onclick="ErradoCat()">CAT</button>
+                </p>
+            </center>
+        </div>
+        <div>
+            <img src="cores/dourado.jpg">
+            <audio controls>
+                <source src="audio/golden.mpeg">
+            </audio>
+            <center>
+                <p>
+                    <button class="button button1" id="gold" onclick="ErradoGold()">GOLD</button>
+                    <button class="button button2" id="golden" onclick="AcertoGolden()">GOLDEN</button>
+                    <button class="button button3" id="shine" onclick="ErradoShine()">SUN</button>
+                </p>
+            </center>
+        </div>
+        <div>
+            <img src="cores/branco.png">
+            <audio controls>
+                <source src="audio/white.mpeg">
+            </audio>
+            <center>
+                <p>
+                    <button class="button button1" id="white" onclick="AcertoWhite()">WHITE</button>
+                    <button class="button button2" id="light" onclick="ErradoLight()">LIGHT</button>
+                    <button class="button button3" id="peace" onclick="ErradoPeace()">PEACE</button>
+                </p>
+            </center>
+        </div>
+        <div>
+            <img src="cores/marrom.jpg">
+            <audio controls>
+                <source src="audio/brown.mpeg">
+            </audio>
+            <center>
+                <p>
+                    <button class="button button1" id="stem" onclick="ErradoStem()">STEM</button>
+                    <button class="button button2" id="brown" onclick="AcertoBrown()">BROWN</button>
+                    <button class="button button3" id="mud" onclick="ErradoMud()">MUD</button>
+                </p>
+            </center>
+        </div>
+        <div>
+            <img src="cores/preto.png">
+            <audio controls>
+                <source src="audio/black.mpeg">
+            </audio>
+            <center>
+                <p>
+                    <button class="button button1" id="black" onclick="AcertoBlack()">BLACK</button>
+                    <button class="button button2" id="dark" onclick="ErradoDark()">DARK</button>
+                    <button class="button button3" id="shirt" onclick="ErradoShirt()">SHIRT</button>
+                </p>
+            </center>
+        </div>
+        <div>
+            <img src="cores/verde.png">
+            <audio controls>
+                <source src="audio/green.mpeg">
+            </audio>
+            <center>
+                <p>
+                    <button class="button button1" id="green" onclick="AcertoGreen()">GREEN</button>
+                    <button class="button button2" id="gram" onclick="ErradoGram()">GRAM</button>
+                    <button class="button button3" id="tree" onclick="ErradoTree()">TREE</button>
+                </p>
+            </center>
+        </div>
+        <div>
+            <img src="cores/roxo.jpeg">
+            <audio controls>
+                <source src="audio/purple.mpeg">
+            </audio>
+            <center>
+                <p>
+                    <button class="button button1" id="vein" onclick="ErradoVein()">VEIN</button>
+                    <button class="button button2" id="bruise" onclick="ErradoBruise()">BRUISE</button>
+                    <button class="button button3" id="purple" onclick="AcertoPurple()">PURPLE</button>
+                </p>
+            </center>
+        </div>
+
+        <div>
+            <img src="cores/rosa.png">
+            <audio controls>
+                <source src="audio/pink.mpeg">
+            </audio>
+            <center>
+                <p>
+                    <button class="button button1" id="sweet" onclick="ErradoSweet()">SWEET</button>
+                    <button class="button button2" id="lollipop" onclick="ErradoLollipop()">CANDY</button>
+                    <button class="button button3" id="pink" onclick="AcertoPink()">PINK</button>
+                </p>
+            </center>
+        </div>
+
+        <div>
+            <img src="cores/vermelho.jpg">
+            <audio controls>
+                <source src="audio/red.mpeg">
+            </audio>
+            <center>
+                <p>
+                    <button class="button button1" id="blood" onclick="ErradoBlood()">BLOOD</button>
+                    <button class="button button2" id="red" onclick="AcertoRed()">RED</button>
+                    <button class="button button3" id="mouth" onclick="ErradoMouth()">MOUTH</button>
+                </p>
+            </center>
+        </div>
+
+    </section>
+        </div>
+</body>
+
+</html>

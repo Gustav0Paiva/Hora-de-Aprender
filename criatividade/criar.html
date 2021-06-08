@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    
+    <script src="pegar.js"></script>
+    <meta charset="UTF-8">
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js" charset="utf-8"></script>
+    <title>Hora da Criatividade</title>
+</head>
+
+<body>
+  <input type="checkbox" id="check">
+  <!--header start-->
+  <header>
+      <label for="check">
+          <i class="fas fa-bars" id="sidebar_btn" style="margin-left: 15px;"></i>
+      </label>
+      <div class="left_area">
+         <h3><span>HORA DE APRENDER</span></h3>
+      </div>
+  </header>
+  <!--header end-->
+  <!--sidebar start-->
+  <div class="sidebar">
+      <div class="menu"></div>
+      <a href="../histórias/historias.html"><i class="fas fa-book"></i><span>HISTÓRIAS</span></a>
+      <a href="#"><i class="fas fa-pen"></i><span>HORA DA CRIATIVIDADE</span></a>
+      <a class="sub-btn"><i class="fas fa-desktop"></i><span>INGLÊS</span><span><i
+                  class="fas fa-angle-right dropdown"></i></span></a>
+      <div class="sub-menu">
+          <a href="../animal/animal.html" class="sub-item"><span>ANIMALS</span></a>
+          <a href="../fruta/fruit.html" class="sub-item"><span>FRUITS</span></a>
+          <a href="../cor/colors.html" class="sub-item"><span>COLORS</span></a>
+      </div>
+      <a href="#"><i class="fas fa-info-circle"></i><span>DESENVOLVEDORES</span></a>
+  </div>
+  <!--sidebar end-->
+  <script type="text/javascript">
+      $(document).ready(function () {
+          //jquery for toggle sub menus
+          $('.sub-btn').click(function () {
+              $(this).next('.sub-menu').slideToggle();
+              $(this).find('.dropdown').toggleClass('rotate');
+          });
+      });
+  </script>
+
+    <div class="historia">
+    <div>
+        <center>
+            <input type="text" id="titulo">
+        </center>
+    </div>
+
+    <div id="conteudo">
+        <center>
+            <textarea type="text" id=valor1 style="font-size: 20px;" maxlength="300" rows="6" cols="50"> </textarea>
+            <p id="valorDigitado" style="visibility: hidden;  font-size: 25px;"></p>
+        </center>
+    </div>
+
+    <div id="conteudo1">
+        <center>
+            <textarea type="text" id=valor2 style="font-size: 20px;" maxlength="300" rows="6" cols="50"> </textarea>
+            <p id="valorDigitado1" style="visibility: hidden;  font-size: 25px;"></p>
+        </center>
+    </div>
+
+    <center>
+       
+        <button class="baixar" type="button" id="btGerarPDF" onclick="capturar()" value="Baixar História"><b>Baixar História</b></button>
+    </center>
+</div>
+    <div id="editor"></div>
+
+    <script src="https://code.jquery.com/jquery-1.12.3.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/1.3.5/jspdf.min.js"></script>
+    <script src="pegar.js"></script>
+</body>
+
+</html>

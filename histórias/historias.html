@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="./css/bootstrap.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+    <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-wEmeIV1mKuiNpC+IOBjI7aAzPcEZeedi5yW5f2yOq55WWLwNGmvvx4Um1vskeMj0" crossorigin="anonymous"> -->
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js" charset="utf-8"></script>
+    <title>Histórias</title>
+</head>
+
+<body>
+
+    <input type="checkbox" id="check">
+    <!--header start-->
+    
+    <header>
+       
+        <label for="check">
+          
+            <i class="fas fa-bars" id="sidebar_btn" style="margin-left: 15px;"></i>
+        </label>
+        <div class="left_area">
+            <h3><span>HORA DE APRENDER</span></h3>
+        </div>
+    </header>
+    <!--header end-->
+    <!--sidebar start-->
+    <div class="sidebar">
+        <div class="menu"></div>
+        <a href="../histórias/historias.html"><i class="fas fa-book"></i><span>HISTÓRIAS</span></a>
+        <a href="../criatividade/criar.html"><i class="fas fa-pen"></i><span>HORA DA CRIATIVIDADE</span></a>
+        <a class="sub-btn"><i class="fas fa-desktop"></i><span>INGLÊS</span><span><i
+                    class="fas fa-angle-right dropdown"></i></span></a>
+        <div class="sub-menu">
+            <a href="../animal/animal.html" class="sub-item"><span>ANIMALS</span></a>
+            <a href="../fruta/fruit.html" class="sub-item"><span>FRUITS</span></a>
+            <a href="../cor/colors.html" class="sub-item"><span>COLORS</span></a>
+        </div>
+        <a href="#"><i class="fas fa-info-circle"></i><span>DESENVOLVEDORES</span></a>
+    </div>
+    <!--sidebar end-->
+    <script type="text/javascript">
+        $(document).ready(function () {
+            //jquery for toggle sub menus
+            $('.sub-btn').click(function () {
+                $(this).next('.sub-menu').slideToggle();
+                $(this).find('.dropdown').toggleClass('rotate');
+            });
+        });
+    </script>
+
+
+
+    <section class="flex">
+        <center>
+            <div class="card" style="width: 18rem;">
+                <img src="data:image/jpeg;base64,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"
+                    class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h3 class="card-title">Bichos, coisas, e lugares</h3>
+                    <p class="card-text">Com texto simples e ilustrações coloridas, este livro está disponível para
+                        download gratuito.
+                        Uma ótima pedida para dar asas à imaginação e introduzir os bichos, as coisas e os lugares para
+                        as crianças de 0 a 2 anos de idade.</p>
+                    <a href="https://5ca0e999-de9a-47e0-9b77-7e3eeab0592c.usrfiles.com/ugd/5ca0e9_2678aeb9b73a4adfbaf696baa97e46b4.pdf"
+                        class="btn btn-primary">Ler</a>
+                </div>
+            </div>
+        </center>
+
+        <center>
+            <div class="card" style="width: 18rem;">
+                <img src="https://image.isu.pub/150602135713-568783febf4b31b90e54c1a93b027807/jpg/page_1.jpg"
+                    class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h3 class="card-title">Tirrim e Cocoricó</h3>
+                    <p class="card-text">Tirrim - o relógio despertador - e Cocoricó - um galo - disputam o privilégio
+                        de acordar o dono todas as manhãs.
+                        Esta história, contada através de poesias, fala sobre a importância da amizade e como a
+                        competitividade excessiva pode causar problemas.</p>
+                    <a href="http://www.educardpaschoal.org.br/web/files/files/Tirrim%20e%20Cocoric%C3%B3.pdf"
+                        class="btn btn-primary">Ler</a>
+                </div>
+            </div>
+        </center>
+
+        <center>
+            <div class="card" style="width: 18rem;">
+                <img src="https://img2.docero.com.br/image/m/ceescc.png" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h3 class="card-title">O Livro dos Sorrisos</h3>
+                    <p class="card-text">Mesmo quando tudo parece dar errado, precisamos seguir em frente. Neste livro
+                        infantil - mas pertinente para todos -
+                        Antônio de Araújo aborda como sorrir é importante mesmo em frente aos desafios da vida. </p>
+                    <a href="https://5ca0e999-de9a-47e0-9b77-7e3eeab0592c.usrfiles.com/ugd/5ca0e9_e12bee37a900421d97c2c6afcae7aed4.pdf"
+                        class="btn btn-primary">Ler</a>
+                </div>
+            </div>
+        </center>
+
+        <center>
+            <div class="card" style="width: 18rem;">
+                <img src="https://d1pkzhm5uq4mnt.cloudfront.net/imagens/capas/_0179d7022ea5ec96d35fe88a1e23a07f850231af.jpg"
+                    class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h3 class="card-title">Diz a Lenda</h3>
+                    <p class="card-text">O livro traz a história das aventuras e dificuldades enfrentadas pelo índio
+                        Auati e sua tribo em busca por alimento,
+                        visto que a floresta, os frutos e os peixes estavam cada vez mais escassos. O download do PDF
+                        pode ser feito gratuitamente.</p>
+                    <a href="http://www.educardpaschoal.org.br/web/files/files/DIZ%20A%20LENDA.pdf"
+                        class="btn btn-primary">Ler</a>
+                </div>
+            </div>
+        </center>
+        <center>
+            <div class="card" style="width: 18rem;">
+                <img src="https://image.isu.pub/150629123744-cb3e20e8ffa838a7bff47c3aac97c340/jpg/page_1.jpg"
+                    class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h3 class="card-title">O Livro que Não Tinha Fim</h3>
+                    <p class="card-text">Uma leitura infantil educativa que nos faz refletir acerca do aquecimento
+                        global e do cuidado com a natureza.</p>
+                    <a href="http://www.educardpaschoal.org.br/web/files/files/O%20livro%20que%20nao%20tinha%20fim.pdf"
+                        class="btn btn-primary">Ler</a>
+                </div>
+            </div>
+        </center>
+        <center>
+            <div class="card" style="width: 18rem;">
+                <img src="http://cdn.shopify.com/s/files/1/1822/2743/products/Quandoaminhaescolaabrir_1024x1024.jpg?v=1611937812"
+                    class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h3 class="card-title">Quando a Minha Escola Abrir</h3>
+                    <p class="card-text">Um livro atual, que aborda as incertezas vividas por muitos alunos durante a
+                        pandemia.
+                        Uma história narrada por sete crianças que deparam com uma realidade nova e bem diferente da que
+                        estavam habituadas a viver. .</p>
+                    <a href="https://3a0fd263-ca04-4a4f-a013-e91c7f1a26a6.filesusr.com/ugd/778303_02632d2388994a61a7998a88b0f6532c.pdf"
+                        class="btn btn-primary">Ler</a>
+                </div>
+            </div>
+        </center>
+        <center>
+            <div class="card" style="width: 18rem;">
+                <img src="https://www.baixelivros.com.br/media/2020/10/porque.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h3 class="card-title">Por quê? Por quê? e Porque!</h3>
+                    <p class="card-text">Bento apresenta com humor a curiosidade inata de todas as crianças com suas
+                        perguntas sobre o mundo.
+                        Um livro divertido, cheio de ilustrações, voltado para crianças entre 6 e 8 anos de idade.</p>
+                    <a href="https://5ca0e999-de9a-47e0-9b77-7e3eeab0592c.usrfiles.com/ugd/5ca0e9_af8951db87704a01afd64fe8f4912de0.pdf"
+                        class="btn btn-primary">Ler</a>
+                </div>
+            </div>
+        </center>
+
+        <center>
+            <div class="card" style="width: 18rem;">
+                <img src="https://www.baixelivros.com.br/media/2020/11/outra-historia.jpg" class="card-img-top"
+                    alt="...">
+                <div class="card-body">
+                    <h3 class="card-title">Outra História de Iracema</h3>
+                    <p class="card-text">Muito além daquela serra, em maio, mês das novenas, bem num belo dia de sol,
+                        nasceu a linda Iracema.
+                        E pra decidir o nome, imagine a confusão.
+                    <p>
+                        <a href="https://5ca0e999-de9a-47e0-9b77-7e3eeab0592c.usrfiles.com/ugd/5ca0e9_ef434841ac074fb89b347d466e9237b0.pdf"
+                            class="btn btn-primary">Ler</a>
+                </div>
+            </div>
+        </center>
+
+        <center>
+            <div class="card" style="width: 18rem;">
+                <img src="https://i.pinimg.com/originals/fa/d4/1d/fad41de35cb83a4c7ab80a44f8fcd134.jpg"
+                    class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h3 class="card-title">O Vestido Azul</h3>
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
+                        card's content.</p>
+                    <a href="http://www.educardpaschoal.org.br/web/files/files/O%20vestido%20azul(1).pdf"
+                        class="btn btn-primary">Ler</a>
+                </div>
+            </div>
+        </center>
+    </section>
+</body>
+
+</html>

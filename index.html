@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js" charset="utf-8"></script>
+    <title>Hora de Aprender</title>
+  </head>
+  <body>
+    
+    <input type="checkbox" id="check">
+    <!--header start-->
+    <header>
+      <label for="check">
+        <i class="fas fa-bars" id="sidebar_btn" style="margin-left: 15px;"></i>
+      </label>
+      <div class="left_area">
+        <h3><span>HORA DE APRENDER</span></h3>
+      </div>
+    </header>
+    <!--header end-->
+    <!--sidebar start-->
+    <div class="sidebar">
+      <div class="menu"></div>
+      <a href="./histórias/historias.html"><i class="fas fa-book"></i><span>HISTÓRIAS</span></a>
+      <a href="./criatividade/criar.html"><i class="fas fa-pen"></i><span>HORA DA CRIATIVIDADE</span></a>
+      <a class="sub-btn"><i class="fas fa-desktop"></i><span>INGLÊS</span><span><i class="fas fa-angle-right dropdown"></i></span></a>
+        <div class="sub-menu">
+          <a href="./animal/animal.html" class="sub-item"><span>ANIMALS</span></a>
+          <a href="./fruta/fruit.html" class="sub-item"><span>FRUITS</span></a>
+          <a href="./cor/colors.html" class="sub-item"><span>COLORS</span></a>
+        </div>
+      <a href="#"><i class="fas fa-info-circle"></i><span>DESENVOLVEDORES</span></a>
+    </div>
+    <!--sidebar end-->
+    <script type="text/javascript">
+      $(document).ready(function(){
+        //jquery for toggle sub menus
+        $('.sub-btn').click(function(){
+          $(this).next('.sub-menu').slideToggle();
+          $(this).find('.dropdown').toggleClass('rotate');
+        });
+      });
+      </script>
+
+  </body>
+</html>

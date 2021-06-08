@@ -1,0 +1,198 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+a{
+  text-decoration: none
+}
+
+body{
+  margin: 0;
+  padding: 0;
+  background-image: url(bg.jpg);
+  background-size: 100%;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+header{
+  z-index: 1;
+  position: fixed;background:rgba(39, 218, 134, 0.61);
+  background: rgba(39, 218, 134, 0.61);
+  padding: 20px;
+  width: calc(100% - 0%);
+  top: 0;
+  height: 30px;
+  backdrop-filter: blur(15px);
+}
+
+.left_area h3{
+  color: black;
+  margin: 0;
+  text-transform: uppercase;
+  font-size: 30px;
+  font-weight: 900;
+}
+
+.left_area span{
+  color: black;
+}
+
+
+.sidebar{
+  z-index: 1;
+  top: 0;
+  background: rgba(39, 218, 134, 0.61);
+  margin-top: 70px;
+  padding-top: 30px;
+  position: fixed;
+  left: 0;
+  width: 250px;
+  height: 100%;
+  transition: 0.5s;
+  transition-property: left;
+  overflow-y: auto;
+  backdrop-filter: blur(15px);
+}
+
+.dropdown{
+  position: absolute;
+  right: 0;
+  margin: 20px;
+  transition: 0.3s ease;
+}
+
+.rotate{
+  transform: rotate(90deg);
+}
+.sidebar a{
+  color: black;
+  display: block;
+  width: 100%;
+  line-height: 60px;
+  text-decoration: none;
+  padding-left: 40px;
+  box-sizing: border-box;
+  transition: 0.5s;
+  transition-property: background;
+}
+
+.sidebar a:hover{
+  background: white;
+}
+
+.sidebar i{
+  padding-right: 10px;
+}
+
+label #sidebar_btn{
+  z-index: 1;
+  color: black;
+  position: fixed;
+  cursor: pointer;
+  left: 300px;
+  font-size: 20px;
+  margin: 10px 0;
+  transition: 0.5s;
+  transition-property: color;
+}
+
+#check:checked ~ .sidebar{
+  left: -185px;
+}
+
+#check:checked ~ .sidebar a span{
+  display: none;
+}
+
+#check:checked ~ .sidebar a{
+  font-size: 20px;
+  margin-left: 165px;
+  width: 100%;
+}
+
+#check{
+  display: none;
+}
+
+
+@media (max-width: 900px){
+  .main h1{
+    font-size: 40px;
+    line-height: 60px;
+  }
+}
+
+
+
+h1{
+    background: -webkit-linear-gradient(#bf3ef1, rgb(226, 19, 19));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: 60;
+    font-family: Courier, monospace ;
+    text-align: center;
+    margin-top: 30px;
+}
+
+img{
+   width: 80%;
+   height: 60%;
+   display: block;
+   margin-left: auto;
+   margin-right: auto;
+}
+
+/* CSS FLEXBOX 1 */
+
+.flex{
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.flex > div {
+    flex: 1 1 200px;
+    margin: 10px;
+}
+
+
+/* CSS GRID 1 */
+
+.conteudo{
+    margin-top: 100px;
+}
+
+.button {
+    border: none;
+    color: white;
+    padding: 15px 15px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+}
+
+
+
+.button1 {
+    background-color: white;
+    color: black;
+    border: 2px solid black;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+.button2 {
+    background-color: white;
+    color: black;
+    border: 2px solid black;
+    font-family: Arial, Helvetica, sans-serif ;
+}
+
+.button3 {
+    background-color: white;
+    color: black;
+    border: 2px solid black;
+    font-family: arial  ;
+}
+
